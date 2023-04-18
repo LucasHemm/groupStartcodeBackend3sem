@@ -83,6 +83,8 @@ public class UserResource {
         UserDTO udtoNew = FACADE.create(user);
         return Response.ok().entity(udtoNew).build();
     }
+
+
     @DELETE
     @Consumes(MediaType.APPLICATION_JSON)
     @Path("delete/{username}")
